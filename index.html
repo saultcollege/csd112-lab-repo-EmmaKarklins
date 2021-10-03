@@ -47,15 +47,28 @@
       </header>
       <main>
         <h1>Welcome to Emma's Website!</h1>
+        <a href="images/emma-photo.jpg">
+          <img
+            src="images/emma-thumb-150w.jpg"
+            alt="Photo of Emma"
+            sizes="(max-width:500px) 150px, 300px"
+            srcset="
+              images/emma-thumb-150w.jpg 150w,
+              images/emma-thumb-300w.jpg 300w
+            "
+        /></a>
         <p>I am from the Sault</p>
         <p>
           I am currently taking the Computer Programmer course at Sault College
         </p>
         <p>I am new to computer programming</p>
         <h2>My Favourite Things</h2>
-        <a href="https://www.arcticmonkeys.com/"
-          ><img src="images/logo.jpg" alt="Arctic Monkeys Logo"
-        /></a>
+        <figure>
+          <a href="https://www.arcticmonkeys.com/">
+            <img src="images/logo.jpg" alt="Arctic Monkeys Logo"
+          /></a>
+          <figcaption><strong>Arctic Monkeys Logo</strong></figcaption>
+        </figure>
         <h3>Favourite Bands/Artists</h3>
         <ol>
           <li>Arctic Monkeys</li>
@@ -76,13 +89,35 @@
           A lovely sunset.<br />
           <cite>by <span class="author">Matsuo Basho</span></cite>
         </p>
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source
+            src="https://ia801303.us.archive.org/31/items/campingcanadianrockies_1512_librivox/campinginthecanadianrockies_01_wilcox_64kb.mp3"
+            type="audio/mpeg"
+          />
+          <a
+            href="https://ia801303.us.archive.org/31/items/campingcanadianrockies_1512_librivox/campinginthecanadianrockies_01_wilcox_64kb.mp3"
+            >Download Track</a
+          >
+        </audio>
+        <h3>YouTube Video</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/UEEsdXn8oG8"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </main>
       <footer>
         <hr />
         <blockquote>
           The future belongs to those who believe in the beauty of their
           dreams.<br />
-          <cite>&mdash; &lt;<span class="author">Eleanor Roosevelt</span>&gt;</cite>
+          <cite
+            >&mdash; &lt;<span class="author">Eleanor Roosevelt</span>&gt;</cite
+          >
         </blockquote>
         <p>
           &copy; 2021
@@ -91,6 +126,19 @@
             >Emma Karklins</a
           >
         </p>
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            width="70"
+            srcset="
+              images/sc-logo.png,
+              images/sc-logo@1.5x.png 1.5x,
+              images/sc-logo2x.png    2x
+            "
+            alt="Sault College Logo"
+          />
+        </picture>
       </footer>
       <a href="#top" title="Back to top">◤</a>
     </div>
