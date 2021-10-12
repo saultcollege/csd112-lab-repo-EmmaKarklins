@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+  <head>
+    <meta name="author" content="Emma Karklins" />
+    <meta name="description" content="My CSD112 Website" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSD112-Emma Karklins</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="width-wrap">
+      <header id="top">
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/links.html">Links</a></li>
+            <li><a href="/glossary.html">Glossary</a></li>
+            <li><a href="/survey.html">Survey</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Survey</h1>
+        <form action="https://formspree.io/f/xleavyer" method="post">
+          <p>
+            <label for="name"
+              >What is your name?<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            ><input type="text" name="name_field" id="name" required />
+          </p>
+          <p>
+            <label for="email"
+              >What is your email?<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            ><input type="email" name="email_field" id="email" required />
+          </p>
+          <p>
+            <label for="number">Which whole number is best?</label
+            ><input type="number" name="best_whole_number" id="number" />
+          </p>
+          <p>
+            <label for="date">Which day is best?</label
+            ><input type="date" name="best_day" id="date" />
+          </p>
+          <p>
+            <label for="bear"
+              >Which bear is best?<abbr title="required" aria-label="required"
+                >*</abbr
+              ></label
+            >
+            <select id="bear" name="best_bear" required>
+              <option></option>
+              <option>Black</option>
+              <option>Brown</option>
+              <option>Care</option>
+              <option>Panda</option>
+              <option>Polar</option>
+              <option>Teddy</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <input
+                  type="radio"
+                  name="response"
+                  value="yes"
+                  id="response_yes"
+                /><label for="response_yes">Yes</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="response"
+                  value="no"
+                  id="response_no"
+                /><label for="response_no">No</label>
+              </li>
+              <li>
+                <input
+                  type="radio"
+                  name="response"
+                  value="?"
+                  id="response_?"
+                  checked
+                /><label for="response_?">None of your business</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="answer">What is the meaning of life?</label
+            ><textarea
+              id="answer"
+              name="life_meaning"
+              rows="5"
+              cols="50"
+              placeholder="Enter the correct answer here"
+            ></textarea>
+          </p>
+          <button class="" type="submit">Send</button>
+        </form>
+      </main>
+      <footer>
+        <hr />
+        <blockquote>
+          The future belongs to those who believe in the beauty of their
+          dreams.<br />
+          <cite
+            >&mdash; &lt;<span class="author">Eleanor Roosevelt</span>&gt;</cite
+          >
+        </blockquote>
+        <p>
+          &copy; 2021
+          <a
+            href="mailto:13037790@student.saultcollege.ca?subject=Message%20from%20CSD112%20Website"
+            >Emma Karklins</a
+          >
+        </p>
+        <picture>
+          <source type="image/svg+xml" srcset="images/sc-logo.svg" />
+          <img
+            src="images/sc-logo.png"
+            width="70"
+            srcset="
+              images/sc-logo.png,
+              images/sc-logo@1.5x.png 1.5x,
+              images/sc-logo@2x.png   2x
+            "
+            alt="Sault College Logo"
+          />
+        </picture>
+      </footer>
+      <a href="#top" title="Back to top">◤</a>
+    </div>
+  </body>
+</html>
