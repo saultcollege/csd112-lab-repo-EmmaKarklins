@@ -8,6 +8,8 @@ html {
 body {
     background-color: #607d86;
     color: #004040;
+    font-family: overpass, sans-serif;
+    line-height: 1.3;
    
 }
 .width-wrap {
@@ -94,16 +96,30 @@ form :invalid {
 }
 h1 {
     color:#004040;
+    font-family: chivo, sans-serif;
 }
 h2 {
     color:#004040;
+    font-family: chivo, sans-serif;
 }
 h3 {
     color:#004040;
+    font-family: chivo, sans-serif;
 }
 a {
     color:#0c2438;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 ::selection {
     background-color: #7fb5b2;
+}
+ol {
+    list-style-type: upper-roman;
+}
+iframe {
+    border-top-right-radius: 2em;
+    border-bottom-left-radius: 2em;
 }
