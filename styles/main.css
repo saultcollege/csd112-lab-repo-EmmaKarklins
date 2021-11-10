@@ -1,9 +1,11 @@
-div {
+html {
     box-sizing: border-box;
-    width: 100%;
 }
-body {
+*, *::after, *::before {
     box-sizing: border-box;
+}
+
+body {
     background-color: #607d86;
     color: #004040;
    
@@ -21,7 +23,7 @@ body {
     background-color: #a6d1d3;      
 }
 footer hr {
-    width: 50%;
+    width: 50vw;
     max-width: 890px;
     min-width: 300px;
     margin-top: 3em;
@@ -40,9 +42,10 @@ nav a:hover {
 }
 nav a {
     display: inline-block;
-    border-top: -2em;
-    padding: 1em;
+    border-top: 4px solid transparent;
+    padding-top: 1em;
     padding-bottom: 0.5em;
+    margin: -4px 1em 0 1em;
 }
 header {
     border-top: 4px solid rgba(0,0,0,0.1);
@@ -61,16 +64,16 @@ nav ul {
 nav li {
     display: inline;
 }
-table {
+table td {
     padding: 0.3em 1em 0.3em 1em;
 }
-thead th, tbody th, tfoot th {
+thead td, th, tfoot td {
     background-color: rgba(0, 0, 0, 0.2);
 }
 table td {
     background-color: rgba(0, 0, 0, 0.05);
 }
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) td {
     background-color: rgba(0,0,0,0.15);
 }
 label {
@@ -84,6 +87,10 @@ fieldset label {
     padding: 1em 3em 1em 3em;
     color: white;
     background-color: #0c2438;
+}
+
+form :invalid {
+    background-color: #ff000080;
 }
 h1 {
     color:#004040;
