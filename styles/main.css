@@ -38,9 +38,13 @@ dt::after {
 }
 header a {
     color: #7e225a;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 }
 nav a:hover {
     border-top: 4px solid purple;
+    text-decoration: none;
 }
 nav a {
     display: inline-block;
@@ -97,6 +101,11 @@ form :invalid {
 h1 {
     color:#004040;
     font-family: chivo, sans-serif;
+    background: rgb(2,150,188);
+    background: linear-gradient(0deg, rgba(2,150,188,1) 20%, rgba(5,73,154,1) 61%, rgba(8,5,124,1) 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+	color: transparent
 }
 h2 {
     color:#004040;
@@ -123,3 +132,7 @@ iframe {
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
 }
+legend li {
+    list-style-type: none;
+}
+/*remove padding from list element*/
