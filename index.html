@@ -159,20 +159,30 @@
           </table>
         </div>
         <h2>My Favourite Things</h2>
+        <div class="favourites">
+          <input type="radio" name="fav_tab" value="tab1" id="logo" checked>
+          <label for="logo"><h3>Logo</h3></label>
+        <div>
         <figure>
           <a href="https://www.arcticmonkeys.com/">
             <img src="images/logo.jpg" alt="Arctic Monkeys Logo"
           /></a>
           <figcaption><strong>Arctic Monkeys Logo</strong></figcaption>
         </figure>
-        <h3>Favourite Bands/Artists</h3>
+        </div>
+        <input type="radio" name="fav_tab" value="tab2" id="bands">
+        <label for="bands"><h3>Favourite Bands/Artists</h3></label>
+        <div>
         <ol>
           <li>Arctic Monkeys</li>
           <li>Black Keys</li>
           <!--Found me!-->
           <li>Amy Winehouse</li>
         </ol>
-        <h3>Haiku</h3>
+        </div>
+        <input type="radio" name="fav_tab" value="tab3" id="haiku"><label for="haiku">
+        <h3>Haiku</h3></label>
+        <div>
         <p>
           An old silent pond...<br />
           A frog jumps into the pond,<br />
@@ -185,7 +195,10 @@
           A lovely sunset.<br />
           <cite>by <span class="author">Matsuo Basho</span></cite>
         </p>
-        <h3>Public Domain Audiobook</h3>
+        </div>
+        <input type="radio" name="fav_tab" value="tab4" id="audio">
+        <label for="audio"><h3>Public Domain Audiobook</h3></label>
+        <div>
         <audio controls>
           <source
             src="https://ia801303.us.archive.org/31/items/campingcanadianrockies_1512_librivox/campinginthecanadianrockies_01_wilcox_64kb.mp3"
@@ -196,7 +209,10 @@
             >Download Track</a
           >
         </audio>
-        <h3>YouTube Video</h3>
+        </div>
+        <input type="radio" name="fav_tab" value="tab5" id="ytvideo">
+        <label for="ytvideo"><h3>YouTube Video</h3></label>
+        <div>
         <iframe
           width="560"
           height="315"
@@ -205,6 +221,8 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
+        </div>
+          </div>  
       </main>
       <footer>
         <hr />

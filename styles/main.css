@@ -71,9 +71,11 @@ header nav {
 nav ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 nav li {
-  display: inline;
+  list-style-type: none;
 }
 table td {
   padding: 0.3em 1em 0.3em 1em;
@@ -174,3 +176,13 @@ a[href="#top"] {
   text-shadow: 3px 3px 3px #0c2438;
   text-decoration: none;
 }
+.favourites div {
+  display: none;
+}
+input[type="radio"]:checked {}
+
+
+
+
+
+
