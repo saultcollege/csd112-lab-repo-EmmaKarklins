@@ -49,20 +49,10 @@
       rel="stylesheet"
     />
     <style>
-      #clouds {
-        float: right;
-      }
-      #landscape {
-        float: left;
-      }
-      #dog {
-        float: right;
-      }
-      main img {
-        margin: 1em;
-      }
-      footer {
-        clear: both;
+      @media screen and (max-width:750px) {
+        img {
+          display: block;
+        }
       }
     </style>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -71,6 +61,8 @@
     <div class="width-wrap">
       <header id="top">
         <nav>
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="sandwich-icon"></label>
           <ul>
             <li><a href="/index.html">Home</a></li>
             <li><a href="/links.html">Links</a></li>
@@ -82,6 +74,7 @@
         </nav>
       </header>
       <main>
+        <div class="lorem">
         <h1>Lorem Ipsum</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -107,7 +100,7 @@
         <p>
           <img
             id="clouds"
-            src="https://loremflickr.com/cache/resized/65535_50021869137_0451fdf49c_320_240_nofilter.jpg"
+            src="https://loremflickr.com/320/240/clouds"
             alt="picture of clouds"
           />
           Cras et posuere velit, a efficitur tortor. Curabitur eu ullamcorper
@@ -134,7 +127,7 @@
         <p>
           <img
             id="landscape"
-            src="https://loremflickr.com/cache/resized/65535_51445170376_a779b172d6_c_320_500_nofilter.jpg"
+            src="https://loremflickr.com/320/400/landscape"
             alt="picture of a landscape"
           />
           Nunc sit amet magna eu purus viverra sagittis egestas sit amet metus.
@@ -167,7 +160,7 @@
         <p>
           <img
             id="dog"
-            src="https://loremflickr.com/cache/resized/65535_51175194845_68d605a9d2_z_300_400_nofilter.jpg"
+            src="https://loremflickr.com/300/400/dog"
             alt="picture of a dog"
           />
           Phasellus sagittis eros sit amet ligula lobortis, ut ultricies elit
@@ -184,6 +177,7 @@
           tincidunt mollis. Praesent eu quam risus.
         </p>
         <p></p>
+      </div>
       </main>
       <footer>
         <hr />
